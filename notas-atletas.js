@@ -20,9 +20,9 @@ let atletas = [
 function calcularMedias(atletas) {
   for (let i = 0; i < atletas.length; i++) {
     let atleta = atletas[i];
-    let notasOrdenadas = atleta.notas.slice().sort((a, b) => a - b); // Ordena sem alterar as notas originais
+    let notasOrdenadas = atleta.notas.slice().sort((a, b) => a - b);
     
-    let notasComputadas = notasOrdenadas.slice(1, 4); // Remove a menor e a maior nota
+    let notasComputadas = notasOrdenadas.slice(1, 4);
 
     let soma = 0;
     notasComputadas.forEach(function(nota) {
